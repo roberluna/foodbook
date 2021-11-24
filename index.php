@@ -52,7 +52,7 @@ require_once("config.php");
        <ul>
                 <?php foreach($recetas as $receta) { ?>
                             <li>
-                                <?php echo $receta['nombre_receta'] ?>
+                                <a href="detalle.php?id=<?php echo $receta['idrecetas'] ?>"><?php echo $receta['nombre_receta'] ?></a>
                             </li>
                 <?php } ?>
         </ul>
